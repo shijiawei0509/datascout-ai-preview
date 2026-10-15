@@ -1,4 +1,8 @@
-"""Minimal Streamlit Community Cloud entrypoint for public metadata only."""
+"""Public metadata preview, release 2026-10-15-65d7221.
+
+The entrypoint is versioned with the public release so hosted script watchers
+observe a change when the shared preview modules are updated.
+"""
 
 import sys
 from pathlib import Path
