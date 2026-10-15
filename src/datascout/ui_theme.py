@@ -32,7 +32,7 @@ def apply_theme(st):
     .stApp {font-size:16px;background:#0c0918;color:#f2eefb;background-image:linear-gradient(#b59aff05 1px,transparent 1px),linear-gradient(90deg,#b59aff05 1px,transparent 1px);background-size:44px 44px;}
     /* This app supplies its own navigation; the fixed native header obscures it. */
     [data-testid="stHeader"] {display:none;}
-    .block-container {max-width:1420px;padding-top:2.2rem;padding-bottom:3rem;}
+    .block-container {max-width:1420px;padding-top:1rem;padding-bottom:3rem;}
     [data-testid="stMarkdownContainer"] p,[data-testid="stTextInput"] input,[data-testid="stTextArea"] textarea {font-size:16px;line-height:1.7;}
     h1,h2,h3 {letter-spacing:-.035em;}
     .ds-brand {display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap;min-height:48px;}
@@ -45,11 +45,11 @@ def apply_theme(st):
     .ds-preview-badge {display:flex;align-items:center;justify-content:center;min-height:48px;border:1px solid #9271b957;border-radius:12px;background:#211630;color:#d9c9f1;font-size:14px;font-weight:600;}
     .st-key-site_nav {padding-bottom:16px;border-bottom:1px solid #8d6ab244;}
     .st-key-site_nav [data-testid="stHorizontalBlock"] {align-items:center;}
-    .st-key-workspace_nav {margin:20px 0 26px;padding:24px 28px;border:1px solid #9473bd72;border-radius:22px;background:linear-gradient(105deg,#291d40,#171125 72%);box-shadow:0 18px 48px #0003;}
+    .st-key-workspace_nav {margin:8px 0 10px;padding:4px 0;border-bottom:1px solid #38264f;background:transparent;}
     .st-key-workspace_nav [data-testid="stHorizontalBlock"] {align-items:center;}
-    .st-key-workspace_nav h2 {font-size:clamp(28px,2.7vw,39px);line-height:1.1;margin:0 0 7px!important;}
+    .st-key-workspace_nav h2 {font-size:22px;line-height:1.3;margin:0!important;}
     .st-key-workspace_nav [data-testid="stCaptionContainer"] {color:#cdbfe0;font-size:13px;letter-spacing:.09em;}
-    .st-key-workspace_nav button {min-height:60px!important;border-radius:13px!important;}
+    .st-key-workspace_nav button {min-height:38px!important;border-radius:8px!important;}
     .st-key-workspace_nav button p {font-size:16px!important;font-weight:650!important;}
     .ds-icon {display:inline-block;position:relative;width:24px;height:24px;min-width:24px;flex-shrink:0;color:var(--ds-accent);vertical-align:middle;}
     .ds-icon::before,.ds-icon::after,.ds-icon i,.ds-icon i::before,.ds-icon i::after {position:absolute;box-sizing:border-box;content:"";display:block;}
@@ -65,6 +65,10 @@ def apply_theme(st):
     .ds-icon-user::before {width:9px;height:9px;left:7.5px;top:1px;border:1.5px solid currentColor;border-radius:50%;}
     .ds-icon-user::after {width:20px;height:11px;left:2px;top:13px;border:1.5px solid currentColor;border-radius:12px 12px 2px 2px;}
 
+    .ds-dataset {border-top:2px solid #725798;padding:18px 0;min-height:310px;}
+    .ds-dataset h3 {font-size:21px;margin:0 0 8px;}.ds-dataset p{color:var(--ds-muted);line-height:1.6;min-height:54px;}
+    .ds-dataset dl{font-size:14px;margin:12px 0 0;}.ds-dataset dl div{display:grid;grid-template-columns:80px 1fr;gap:10px;padding:5px 0;border-top:1px solid #38264f;}
+    .ds-dataset dt{color:var(--ds-muted);}.ds-dataset dd{margin:0;overflow-wrap:anywhere;}
     .ds-card {background:linear-gradient(135deg,#201831,#151023);border:1px solid var(--ds-line);border-radius:18px;padding:28px;height:100%;transition:transform .25s,border-color .25s,box-shadow .25s;}
     .ds-card:hover {transform:translateY(-3px);border-color:#79609e;box-shadow:0 12px 36px #b59aff0d;}
     .ds-card h3 {margin:14px 0 8px;font-size:21px;} .ds-card p {color:var(--ds-muted);line-height:1.8;margin:0;} .ds-card small {color:var(--ds-accent);font:12px Consolas,monospace;letter-spacing:2px;margin-left:12px;}
@@ -73,7 +77,11 @@ def apply_theme(st):
     button {min-height:48px!important;} button p {font-size:16px!important;line-height:1.4!important;}
     button {transition:transform .2s,box-shadow .2s!important;} button:hover {box-shadow:0 0 22px #b59aff14;} button:focus-visible,a:focus-visible {outline:2px solid #b59aff!important;outline-offset:3px;}
     [data-testid="stExpander"] {border-color:var(--ds-line);background:#151023;}
-    @media(max-width:700px){.block-container {padding:1rem;} .ds-brand-promise {font-size:13px;} .ds-account {justify-content:flex-start;} .ds-card {padding:18px;}.st-key-workspace_nav{padding:20px;margin-top:14px;}}
+    @media(max-width:700px){.block-container {padding:1rem;} .ds-brand-promise {font-size:13px;} .ds-account {justify-content:flex-start;} .ds-card {padding:18px;}.st-key-workspace_nav{padding:6px 0;margin-top:8px;}}
+    .st-key-procurement {padding:16px 20px!important;border:1px solid var(--ds-line)!important;border-radius:14px!important;background:#151023;}
+    .st-key-procurement [data-testid="stTextArea"] textarea {background:#0e0b19;border-radius:8px;}
+    .st-key-procurement [data-testid="stCaptionContainer"] p {font-size:13px;line-height:1.5;}
+    [data-testid="stNumberInput"] input,[data-testid="stSelectbox"] [data-baseweb="select"] {border-radius:8px;}
     [data-testid="InputInstructions"] {display:none;}
     @media(max-width:1100px){.st-key-site_nav [data-testid="stHorizontalBlock"]{flex-wrap:wrap!important;gap:8px!important}.st-key-site_nav [data-testid="stColumn"]{flex:1 1 30%!important;min-width:130px!important;width:auto!important}.st-key-site_nav [data-testid="stColumn"]:first-child{flex:1 1 100%!important}}
     @media(max-width:700px){.st-key-site_nav [data-testid="stHorizontalBlock"],.st-key-workspace_nav [data-testid="stHorizontalBlock"]{flex-wrap:wrap!important;gap:8px!important}.st-key-site_nav [data-testid="stColumn"],.st-key-workspace_nav [data-testid="stColumn"]{flex:1 1 40%!important;min-width:0!important;width:auto!important}.st-key-site_nav [data-testid="stColumn"]:first-child,.st-key-workspace_nav [data-testid="stColumn"]:first-child{flex:1 1 100%!important}.st-key-site_nav button{padding:8px!important}.st-key-site_nav button p{font-size:13px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}.st-key-site_nav [data-testid="stIconMaterial"]{font-size:18px!important}}

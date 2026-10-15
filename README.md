@@ -14,3 +14,14 @@ streamlit run preview/streamlit_app.py
 Connect this GitHub repository to Streamlit Community Cloud and select `preview/streamlit_app.py` as the entrypoint. Dependencies are listed beside the entrypoint in `preview/requirements.txt`. Streamlit will assign a `*.streamlit.app` URL. This repository contains no private account or runtime data.
 
 The buyer/seller prototype is separate and currently runs locally. A public multiuser version needs persistent storage, production authentication, and per-user model authorization before deployment.
+
+## Latest public preview · 2026-10-15
+
+[Open the deployed preview](https://datascout-ai-preview.streamlit.app/).
+This release syncs the current shared theme and preserves the original dataset
+cards, hover lift, border highlight and shadow. Search, filters, bilingual labels,
+official source links and all 15 catalog records remain available.
+
+The public build is based on local source revision `65d7221`. The private buyer
+workspace, model evaluation runner, accounts and runtime data are not part of this
+repository or this deployment.

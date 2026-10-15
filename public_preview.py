@@ -7,6 +7,8 @@ from datascout.ui_home import render_home
 from datascout.ui_i18n import t
 from datascout.ui_theme import apply_theme, brand
 
+PREVIEW_BUILD = "2026-10-15-65d7221"
+
 
 def main():
     st.set_page_config(page_title="DataScout AI · Preview", page_icon="◈", layout="wide")
@@ -43,7 +45,7 @@ def main():
             label_visibility="collapsed",
         )
         nav[4].html(
-            '<div class="ds-preview-badge">'
+            f'<div class="ds-preview-badge" data-build="{PREVIEW_BUILD}">'
             + t(st, "公开预览 · 只读", "Public preview · Read only")
             + "</div>"
         )
